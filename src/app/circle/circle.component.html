@@ -1,0 +1,5 @@
+<input [(ngModel)]="filter"  type="text" ><span>Diameter</span>
+<input [(ngModel)]="isCircle" type="checkbox" ><span>Is Circle?</span>
+<h1 *ngFor="let obj of diameter | testPipe: filter"><span [ngStyle]='obj.style'>{{obj.prop1 }}</span></h1>
+<h1>{{defaultVal}}</h1>
+<button (click)='onClick()'>Click Me</button>
